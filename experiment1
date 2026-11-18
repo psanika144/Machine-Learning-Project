@@ -1,0 +1,25 @@
+import sklearn
+from sklearn.datasets import load_iris
+
+print("Scikit-learn Introduction")
+
+print("Scikit-learn Version:", sklearn.__version__)
+
+iris = load_iris()
+
+print("\nDataset Description:")
+print(iris.DESCR[:500])
+
+print("\nFeature Names:")
+print(iris.feature_names)
+
+print("\nTarget Names:")
+print(iris.target_names)
+
+print("\nDataset Shape:")
+print(iris.data.shape)
+
+print("\nFirst Five Records:")
+print(iris.data[:5])
+
+print("\nScikit-learn is successfully installed!")
